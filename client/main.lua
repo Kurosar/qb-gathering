@@ -16,6 +16,7 @@ DrawText3Ds = function(x, y, z, text)
 end
 
 Citizen.CreateThread(function()
+    TriggerServerEvent(Config.itemname..':server:spawnobjects')
     while true do
         local PlayerPed = PlayerPedId()
         local PlayerPos = GetEntityCoords(PlayerPed)
@@ -96,13 +97,6 @@ end
 function LoadAnim(dict)
     while not HasAnimDictLoaded(dict) do
         RequestAnimDict(dict)
-        Citizen.Wait(1)
-    end
-end
-
-function LoadModel(model)
-    while not HasModelLoaded(model) do
-        RequestModel(model)
         Citizen.Wait(1)
     end
 end
