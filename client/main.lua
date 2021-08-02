@@ -24,7 +24,7 @@ Citizen.CreateThread(function()
             local pos = vector3(v.x, v.y, v.z)
             local distance = #(PlayerPos - pos)
             if Isanyrange(PlayerPos) then
-                if distance < Config.range then
+                if (distance < Config.range) == true then
                     DrawText3Ds(v.x,v.y,v.z, "~g~["..Config.keytext.."] ~w~ " .. Config.gathertext .." ".. Config.itemlabel)
                     if IsControlJustPressed(0, Config.key) then
                         pickProcess()
@@ -41,10 +41,8 @@ end)
 function Isanyrange(playerpos)
     for k, v in pairs(Config.locations["positions"]) do
         local distance = #(playerpos - vector3(v.x, v.y, v.z))
-        if distance < 15 then
+        if distance < Config.range then
             return true
-        else
-            return false
         end
     end
 end
