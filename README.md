@@ -56,3 +56,5 @@ Config.locations = {
 
 **Be careful :** The objects are spawned the first time a player joins the server, if you restart qb-gathering, it will spawn new objects on top of the old ones !  
 Preferably try to use the delete laser to remove the old qb-gathering objects if you intend to restart the script.  
+  
+[![Hits](https://hits.seeyoufarm.com/api/count/incr/badge.svg?url=https%3A%2F%2Fgithub.com%2FKurosar%2Fqb-gathering&count_bg=%2379C83D&title_bg=%23555555&icon=github.svg&icon_color=%23E7E7E7&title=visitors&edge_flat=true)](https://hits.seeyoufarm.com)
