@@ -1,0 +1,6 @@
+RegisterServerEvent(Config.itemname..':server:getitem')
+AddEventHandler(Config.itemname..':server:getitem', function()
+    local Player = QBCore.Functions.GetPlayer(source)
+    Player.Functions.AddItem(Config.itemname, Config.numbertogive)
+    TriggerClientEvent('inventory:client:ItemBox', source, QBCore.Shared.Items[Config.itemname], "add")
+end)
