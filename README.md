@@ -17,13 +17,17 @@ You can also copy/paste the folder and rename it to create a new type of farming
 Config = {}
 
 -- WHICH ITEM TO GIVE
-Config.itemname  = "cocaleaf" -- Item name in shared.lua, Example : cocaleaf
+Config.itemname  = "weed_skunk" -- Item name in shared.lua, Example : cocaleaf
 
 -- TRANSLATION TEXT
-Config.itemlabel = "Cocaine leaf" -- Example : Cocaine leaf
+Config.itemlabel = "Weed" -- Example : Cocaine leaf
 Config.gathertext = "Gather" -- Example : Gather
 Config.gatheringtext = "Gathering" -- Example : Gathering
 Config.canceledtext = "Canceled" -- Example : Canceled
+
+-- OBJECT TYPE AND OFFSET
+Config.model = "Prop_weed_01" -- Example : Prop_weed_01
+Config.offset = vector3(0,0,-1) -- Object position offset
 
 -- ANIMATION TO PLAY
 Config.animation = "prop_human_parking_meter" -- Animation played https://wiki.gtanet.work/index.php?title=Animations (example : WORLD_HUMAN_GARDENER_PLANT)
@@ -43,7 +47,7 @@ Config.keytext = "G" -- Text to display for the key to press
 -- GATHER LOCATIONS
 Config.locations = {
     ["positions"] = { -- DON'T CHANGE
-        [1] = vector3(125.0502, -415.475, 41.060), -- Position 1
+        [1] = vector3(556.6391, 786.7302, 200.50), -- Position 1
         [2] = vector3(125.1127, -434.440, 41.067), -- Position 2
         [3] = vector3(113.5972, -423.159, 41.060)  -- Position 3
     }
