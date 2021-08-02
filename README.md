@@ -9,7 +9,9 @@ This is a basic gathering/farming script made for QB-Core to give a certain amou
 You can also copy/paste the folder and rename it to create a new type of farming/gathering location (since everything is configurable in config.lua)  
 
 **Screenshot**   
-![image](https://user-images.githubusercontent.com/4887819/127907608-ae6bbd4f-5b2e-449d-9fa3-530d85845344.png)
+![image](https://user-images.githubusercontent.com/4887819/127907608-ae6bbd4f-5b2e-449d-9fa3-530d85845344.png)  
+![image](https://user-images.githubusercontent.com/4887819/127908134-4337c316-cbcf-46ff-b76e-61d00673175d.png)
+
 
 ```lua
 Config = {}
