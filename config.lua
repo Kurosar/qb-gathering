@@ -10,7 +10,7 @@ Config.gatheringtext = "Gathering" -- Example : Gathering
 Config.canceledtext = "Canceled" -- Example : Canceled
 
 -- OBJECT TYPE AND OFFSET
-Config.model = "Prop_weed_01" -- Example : Prop_weed_01
+Config.model = "Prop_weed_01" -- Example : Prop_weed_01 http://www.test.raccoon72.ru/?c=ext_veg
 Config.offset = vector3(0,0,-1) -- Object position offset
 
 -- ANIMATION TO PLAY
